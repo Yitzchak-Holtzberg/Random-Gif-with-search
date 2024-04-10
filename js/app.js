@@ -52,7 +52,7 @@ async function fetchGif(url) {
 document.addEventListener("DOMContentLoaded", () => {
   const url = `${BASE_URL}/translate?api_key=${API_KEY}&s=cats`;
   fetchGif(url);
-  spinImage(10000)
+  spinImage(2000)
 });
 
 // Fetches a random gif related to the search term when the search button is clicked.
@@ -60,7 +60,7 @@ searchButton.addEventListener("click", () => {
   const searchTerm = searchBox.value.trim();
   const url = `${BASE_URL}/random?api_key=${API_KEY}&tag=${searchTerm}`;
   fetchGif(url);
-  spinImage(10000)
+  spinImage(2000)
 });
 
 
